@@ -1,6 +1,6 @@
 <template>
-    <div class="my-component">
-        <h1 class="text-3xl mb-6 text-center mt-40">Hitung Total</h1>
+    <div class="my-component pb-56 pt-56">
+        <h1 class="text-3xl mb-6 text-center">Hitung Total</h1>
         <div class="flex justify-center mb-5">
         <div class="w-full max-w-sm">
             <p class="text-center">Masukan Total Harga :</p>
@@ -23,28 +23,28 @@
                         <tr>
                             <td class="p-2 align-top">Subtotal</td>
                             <td class="p-2 align-top">:</td>
-                            <td class="p-2 align-top">
+                            <td class="p-2 align-top text-right">
                                 Rp. {{ (harga).toLocaleString() }}
                             </td>
                         </tr>
                         <tr>
                             <td class="p-2 align-top">Discount</td>
                             <td class="p-2 align-top">:</td>
-                            <td class="p-2 align-top">
+                            <td class="p-2 align-top text-right">
                                 {{ Math.round(discount * 100) + "%" }}
                             </td>
                         </tr>
                         <tr>
                             <td class="p-2 align-top">Potongan</td>
                             <td class="p-2 align-top">:</td>
-                            <td class="p-2 align-top">
+                            <td class="p-2 align-top text-right">
                                 Rp. {{ (harga*discount).toLocaleString() }}
                             </td>
                         </tr>
                         <tr>
                             <td class="p-2 align-top border-t-2">Total</td>
                             <td class="p-2 align-top border-t-2">:</td>
-                            <td class="p-2 align-top border-t-2"><strong>Rp. {{ total.toLocaleString() }} </strong></td>
+                            <td class="p-2 align-top border-t-2 text-right"><strong>Rp. {{ total.toLocaleString() }} </strong></td>
                         </tr>
                     </tbody>    
                 </table>
